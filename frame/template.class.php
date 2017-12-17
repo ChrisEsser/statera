@@ -44,21 +44,23 @@ class Template
             include($viewsRoot . 'index.header.php');
         }
 
+        $controller = strtolower($this->_controller);
+        $action = strtolower($this->_action);
 
         // check for a view file matching the action
-        if (file_exists($viewsRoot . $this->_controller . DS . $this->_action  . '.php')) {
+        if (file_exists($viewsRoot . $controller . DS . $action  . '.php')) {
 
             // controller global header
-            if (file_exists($viewsRoot . $this->_controller . DS . 'header'  . '.php')) {
-                include($viewsRoot . $this->_controller . DS . 'header'  . '.php');
+            if (file_exists($viewsRoot . $controller . DS . 'header'  . '.php')) {
+                include($viewsRoot . $controller . DS . 'header'  . '.php');
             }
 
             // display this action's view
-            include($viewsRoot . $this->_controller . DS . $this->_action  . '.php');
+            include($viewsRoot . $controller . DS . $action  . '.php');
 
             // controller global footer
-            if (file_exists($viewsRoot . $this->_controller . DS . 'footer'  . '.php')) {
-                include($viewsRoot . $this->_controller . DS . 'footer'  . '.php');
+            if (file_exists($viewsRoot . $controller . DS . 'footer'  . '.php')) {
+                include($viewsRoot . $controller . DS . 'footer'  . '.php');
             }
 
         } else {
