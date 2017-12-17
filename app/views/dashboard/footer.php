@@ -33,7 +33,7 @@
             <script>
                 document.write(new Date().getFullYear())
             </script>
-            <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
+            <a href="#">Statera</a>, some legal bull shit
         </p>
     </div>
 </footer>
@@ -55,7 +55,7 @@
 <!--  Notifications Plugin    -->
 <script src="<?=BASE_PATH?>/js/bootstrap-notify.js"></script>
 <!--  Google Maps Plugin    -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+<!--<script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>-->
 <!-- Material Dashboard javascript methods -->
 <script src="<?=BASE_PATH?>/js/material-dashboard.js?v=1.2.0"></script>
 <!-- Material Dashboard DEMO methods, don't include it in your project! -->
