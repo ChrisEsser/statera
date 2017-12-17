@@ -9,25 +9,27 @@
     <title>Satera</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
-    <!-- Bootstrap core CSS     -->
+
+    <!-- CSS core Libraries     -->
     <link href="<?=BASE_PATH?>/css/bootstrap.min.css" rel="stylesheet" />
-    <!--  Material Dashboard CSS    -->
     <link href="<?=BASE_PATH?>/css/material-dashboard.css?v=1.2.0" rel="stylesheet" />
-    <!--  CSS for Demo Purpose, don't include it in your project     -->
-    <link href="<?=BASE_PATH?>/css/demo.css" rel="stylesheet" />
-    <!--     Fonts and icons     -->
+
+    <!--  CSS for Demo Purpose, don't include it in your project   -->
+    <link href="<?=BASE_PATH?>/css/style.css" rel="stylesheet" />
+
+    <!-- fonts and icons -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='//fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="sidebar" data-color="green" data-image="<?=BASE_PATH?>/img/sidebar-1.jpg">
-            <!--
-        Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
 
-        Tip 2: you can also add an image using data-image tag
-    -->
+
+
+    <div class="wrapper">
+
+        <!-- sidebar -->
+        <div class="sidebar" data-color="green" data-image="<?=BASE_PATH?>/img/sidebar-1.jpg">
             <div class="logo">
                 <a href="<?=BASE_PATH?>" class="simple-text">
                     Statera
@@ -41,10 +43,10 @@
                             <p>Dashboard</p>
                         </a>
                     </li>
-                    <li class="<?=$this->_action == 'account' ? 'active' : ''?>">
-                        <a href="<?=BASE_PATH?>/account">
+                    <li class="<?=$this->_action == 'settings' ? 'active' : ''?>">
+                        <a href="<?=BASE_PATH?>/settings">
                             <i class="material-icons">bubble_chart</i>
-                            <p>Account</p>
+                            <p>Settings</p>
                         </a>
                     </li>
                     <li class="<?=$this->_action == 'notifications' ? 'active' : ''?>">
@@ -56,7 +58,7 @@
                     <li class="<?=$this->_action == 'profile' ? 'active' : ''?>">
                         <a href="<?=BASE_PATH?>/profile">
                             <i class="material-icons">person</i>
-                            <p>User Profile</p>
+                            <p>Profile</p>
                         </a>
                     </li>
 <!--                    <li>-->
@@ -87,44 +89,64 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div><!-- end sidebar -->
+
+        <!-- start main wrapper (ends in footer) -->
         <div class="main-panel">
+
+            <!-- start site notifications -->
+            <div id="dashboard-notifications" style="display: none">
+                <div class="alert alert-danger">
+                    <div class="container-fluid">
+                        <div class="alert-icon">
+                            <i class="material-icons">error_outline</i>
+                        </div>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true"><i class="material-icons">clear</i></span>
+                        </button>
+                        <b>Alert:</b> Damn man! You screwed up the server this time. You should find a good excuse for your Boss...
+                    </div>
+                </div>
+            </div><!-- end site notifications -->
+
+            <!-- mobile nav -->
             <nav class="navbar navbar-transparent navbar-absolute">
                 <div class="container-fluid">
                     <div class="navbar-header">
+
+                        <!-- hamburger -->
                         <button type="button" class="navbar-toggle" data-toggle="collapse">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
-                        </button>
+                        </button><!-- end hamburger -->
+
+                        <!-- current page -->
                         <a class="navbar-brand" href="#">
                             <?=ucwords($this->_action)?>
                         </a>
+
                     </div>
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li>
-                                <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="material-icons">dashboard</i>
-                                    <p class="hidden-lg hidden-md">Dashboard</p>
-                                </a>
-                            </li>
+
+                            <!-- start notifications dropdown -->
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                     <i class="material-icons">notifications</i>
-                                    <span class="notification">1</span>
+                                    <span class="notification">5</span>
                                     <p class="hidden-lg hidden-md">Notifications</p>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="#">Mike John responded to your email</a>
+                                        <a href="#">Notification one.</a>
                                     </li>
                                     <li>
-                                        <a href="#">You have 5 new tasks</a>
+                                        <a href="#">Another notification about something.</a>
                                     </li>
                                     <li>
-                                        <a href="#">You're now friend with Andrew</a>
+                                        <a href="#">This is the third notification</a>
                                     </li>
                                     <li>
                                         <a href="#">Another Notification</a>
@@ -133,14 +155,18 @@
                                         <a href="#">Another One</a>
                                     </li>
                                 </ul>
-                            </li>
-                            <li>
-                                <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="material-icons">person</i>
-                                    <p class="hidden-lg hidden-md">Profile</p>
-                                </a>
-                            </li>
+                            </li><!-- end notifications dropdown -->
+
+<!--                            <li>-->
+<!--                                <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">-->
+<!--                                    <i class="material-icons">person</i>-->
+<!--                                    <p class="hidden-lg hidden-md">Profile</p>-->
+<!--                                </a>-->
+<!--                            </li>-->
+
                         </ul>
+
+                        <!-- start search form -->
                         <form class="navbar-form navbar-right" role="search">
                             <div class="form-group  is-empty">
                                 <input type="text" class="form-control" placeholder="Search">
@@ -150,9 +176,11 @@
                                 <i class="material-icons">search</i>
                                 <div class="ripple-container"></div>
                             </button>
-                        </form>
+                        </form><!-- end search form -->
+
                     </div>
                 </div>
-            </nav>
-            <div class="content">
-                <div class="container-fluid">
+            </nav><!-- end mobile nav -->
+
+            <div class="content"><!-- ends in footer -->
+                <div class="container-fluid"><!-- ends in footer -->

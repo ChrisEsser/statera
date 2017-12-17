@@ -668,7 +668,7 @@ h2.title {
     position: relative;
     height: calc(100vh - 75px);
     overflow: auto;
-    width: 260px;
+    width: 233px;
     z-index: 4;
 }
 
@@ -930,7 +930,7 @@ h2.title {
 .main-panel {
     position: relative;
     float: right;
-    width: calc(100% - 260px);
+    width: calc(100% - 233px);
     -webkit-transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
     -moz-transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
     -o-transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);

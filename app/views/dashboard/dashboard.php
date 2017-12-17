@@ -1,3 +1,4 @@
+<!-- top section - quick summaries -->
 <div class="row">
     <div class="col-lg-3 col-md-6 col-sm-6">
         <div class="card card-stats">
@@ -6,8 +7,8 @@
             </div>
             <div class="card-content">
                 <p class="category">Revenue</p>
-                <h3 class="title">$34,245
-<!--                    <small>GB</small>-->
+                <h3 class="title">$34,245<br />
+                    <small>+2.5%</small>
                 </h3>
             </div>
             <div class="card-footer">
@@ -18,6 +19,7 @@
             </div>
         </div>
     </div>
+
     <div class="col-lg-3 col-md-6 col-sm-6">
         <div class="card card-stats">
             <div class="card-header" data-background-color="orange">
@@ -25,7 +27,8 @@
             </div>
             <div class="card-content">
                 <p class="category">Revenue</p>
-                <h3 class="title">$245.45</h3>
+                <h3 class="title">$245.45&nbsp;</h3>
+                <small>+1.5%</small>
             </div>
             <div class="card-footer">
                 <div class="stats">
@@ -34,6 +37,7 @@
             </div>
         </div>
     </div>
+
     <div class="col-lg-3 col-md-6 col-sm-6">
         <div class="card card-stats">
             <div class="card-header" data-background-color="purple">
@@ -41,7 +45,7 @@
             </div>
             <div class="card-content">
                 <p class="category">From Crypto</p>
-                <h3 class="title">$200.45</h3>
+                <h3 class="title">$200.45&nbsp;</h3>
             </div>
             <div class="card-footer">
                 <div class="stats">
@@ -50,6 +54,7 @@
             </div>
         </div>
     </div>
+
     <div class="col-lg-3 col-md-6 col-sm-6">
         <div class="card card-stats">
             <div class="card-header" data-background-color="blue">
@@ -58,6 +63,7 @@
             <div class="card-content">
                 <p class="category">From Stocks<br /></p>
                 <h3 class="title">$45.00&nbsp;</h3>
+                <small>+9.7%</small>
             </div>
             <div class="card-footer">
                 <div class="stats">
@@ -66,7 +72,9 @@
             </div>
         </div>
     </div>
-</div>
+</div><!-- end quick summaries -->
+
+<!-- charts row -->
 <div class="row">
     <div class="col-md-4">
         <div class="card">
@@ -85,6 +93,7 @@
             </div>
         </div>
     </div>
+
     <div class="col-md-4">
         <div class="card">
             <div class="card-header card-chart" data-background-color="orange">
@@ -101,6 +110,7 @@
             </div>
         </div>
     </div>
+
     <div class="col-md-4">
         <div class="card">
             <div class="card-header card-chart" data-background-color="red">
@@ -117,8 +127,12 @@
             </div>
         </div>
     </div>
-</div>
+</div><!-- end charts row -->
+
+<!-- tables row -->
 <div class="row">
+
+    <!-- table one -->
     <div class="col-lg-6 col-md-12">
         <div class="card card-nav-tabs">
             <div class="card-header" data-background-color="purple">
@@ -319,49 +333,46 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div><!-- end table one -->
+
+    <!-- table two -->
     <div class="col-lg-6 col-md-12">
         <div class="card">
             <div class="card-header" data-background-color="orange">
-                <h4 class="title">Employees Stats</h4>
-                <p class="category">New employees on 15th September, 2016</p>
+                <h4 class="title">Top Investments</h4>
+                <p class="category"></p>
             </div>
             <div class="card-content table-responsive">
                 <table class="table table-hover">
                     <thead class="text-warning">
-                    <th>ID</th>
                     <th>Name</th>
-                    <th>Salary</th>
-                    <th>Country</th>
+                    <th>Value</th>
+                    <th>Location</th>
                     </thead>
                     <tbody>
                     <tr>
-                        <td>1</td>
-                        <td>Dakota Rice</td>
+                        <td>Bitcoin</td>
                         <td>$36,738</td>
-                        <td>Niger</td>
+                        <td>GDAX</td>
                     </tr>
                     <tr>
-                        <td>2</td>
-                        <td>Minerva Hooper</td>
-                        <td>$23,789</td>
-                        <td>Curaçao</td>
+                        <td>Ripple</td>
+                        <td>10,789</td>
+                        <td>Bittrex</td>
                     </tr>
                     <tr>
-                        <td>3</td>
-                        <td>Sage Rodriguez</td>
-                        <td>$56,142</td>
-                        <td>Netherlands</td>
+                        <td>Etherum</td>
+                        <td>$6,142</td>
+                        <td>Ledger Nano S</td>
                     </tr>
                     <tr>
-                        <td>4</td>
-                        <td>Philip Chaney</td>
-                        <td>$38,735</td>
-                        <td>Korea, South</td>
+                        <td>SOXL</td>
+                        <td>$3,735</td>
+                        <td>Robinhood</td>
                     </tr>
                     </tbody>
                 </table>
             </div>
         </div>
-    </div>
-</div>
+    </div><!-- end table two -->
+</div><!-- end tables row -->

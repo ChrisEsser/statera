@@ -6,6 +6,6 @@ $router->addRoutes([
     ['GET', '', 'IndexController#index'],
     ['GET', '/dashboard', 'DashboardController#dashboard'],
     ['GET', '/profile', 'DashboardController#profile'],
-    ['GET', '/account', 'DashboardController#account'],
+    ['GET', '/settings', 'DashboardController#settings'],
     ['GET', '/notifications', 'DashboardController#notifications'],
 ]);
