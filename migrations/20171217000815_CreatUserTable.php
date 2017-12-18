@@ -16,7 +16,7 @@ class CreatUserTable extends Migration
                   first_name VARCHAR(255), 
                   last_name VARCHAR(255), 
                   password VARCHAR(64), 
-                  admin BIT NOT NULL DEFAULT 0
+                  admin TINYINT(1) DEFAULT 0
                 );';
 
         $container = $this->getContainer();
