@@ -6,11 +6,7 @@
                 <p class="category">Stay informed about your investments</p>
             </div>
             <div class="card-content">
-                <div id="typography">
-                    <p class="row">
-                        <p>Put notification setting here. Ability to choose email and text notification settings.</p>
-                    </div>
-                </div>
+                <p>Put notification settings here. Ability to choose email and text notification settings.</p>
             </div>
         </div>
     </div>

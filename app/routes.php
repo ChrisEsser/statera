@@ -10,6 +10,8 @@ $router->addRoutes([
     ['GET', '/investments', 'DashboardController#investments'],
     ['GET', '/notifications', 'DashboardController#notifications'],
 
+    ['POST', '/account/save', 'DashboardController#account_save'],
+
     ['POST', '/signupprocess', 'AuthController#signup_process'],
     ['GET', '/signup/confirm', 'AuthController#signup_confirm'],
 

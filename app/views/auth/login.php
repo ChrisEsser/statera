@@ -86,7 +86,7 @@
                                 <div class="col-md-12">
                                     <div class="form-group label-floating <?=(in_array('password_confirm', $missing)) ? 'has-error' : ''?>">
                                         <label class="control-label">Confirm Password</label>
-                                        <input type="password" name="password_confirm" class="form-control" />
+                                        <input type="password" name="password_confirm" class="form-control" autocomplete="new-password" />
                                     </div>
                                 </div>
                             </div>
@@ -99,6 +99,13 @@
             </div>
         </div>
     </div>
+
+    <script src="<?=BASE_PATH?>/js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="<?=BASE_PATH?>/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="<?=BASE_PATH?>/js/material.min.js" type="text/javascript"></script>
+
+    <script src="<?=BASE_PATH?>/js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="<?=BASE_PATH?>/js/material-dashboard.js?v=1.2.0"></script>
 
     <?=Notifications::displayErrors()?>
 

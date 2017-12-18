@@ -2,11 +2,12 @@
     <div class="col-md-8">
         <div class="card">
             <div class="card-header" data-background-color="green">
-                <h4 class="title">Edit Profile</h4>
+                <h4 class="title">Edit Account Info</h4>
 <!--                <p class="category">Complete your profile</p>-->
             </div>
             <div class="card-content">
-                <form>
+                <form method="POST" action="<?=BASE_PATH?>/account/save">
+                    <input type="password" style="display: none" />
                     <div class="row">
 <!--                        <div class="col-md-5">-->
 <!--                            <div class="form-group label-floating">-->
@@ -17,13 +18,13 @@
                         <div class="col-md-6">
                             <div class="form-group label-floating">
                                 <label class="control-label">Username</label>
-                                <input type="text" class="form-control">
+                                <input type="text" name="username" class="form-control" value="<?=(!empty($user->username) ? $user->username : '')?>">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group label-floating">
-                                <label class="control-label">Password</label>
-                                <input type="password" class="form-control">
+                                <label class="control-label">Update Password</label>
+                                <input type="password" name="password" class="form-control" autocomplete="new-password" />
                             </div>
                         </div>
 <!--                        <div class="col-md-4">-->
@@ -37,13 +38,13 @@
                         <div class="col-md-6">
                             <div class="form-group label-floating">
                                 <label class="control-label">Fist Name</label>
-                                <input type="text" class="form-control">
+                                <input type="text" name="first_name" class="form-control" value="<?=(!empty($user->first_name) ? $user->first_name : '')?>">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group label-floating">
                                 <label class="control-label">Last Name</label>
-                                <input type="text" class="form-control">
+                                <input type="text" name="last_name" class="form-control" value="<?=(!empty($user->last_name) ? $user->last_name : '')?>">
                             </div>
                         </div>
                     </div>
