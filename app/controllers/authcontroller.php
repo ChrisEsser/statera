@@ -85,7 +85,6 @@ class AuthController extends BaseController
             $user = new User();
             $user->username = $_POST['username'];
             $user->password = password_hash($_POST['password'], PASSWORD_DEFAULT);
-            $user->admin = 0;
             $user->save();
 
             Redirect::to(BASE_PATH . '/signup/confirm');
