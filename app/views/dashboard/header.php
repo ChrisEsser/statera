@@ -20,6 +20,7 @@
     <!-- fonts and icons -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='//fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
+
 </head>
 
 <body>
@@ -32,6 +33,7 @@
         <div class="sidebar" data-color="green" data-image="<?=BASE_PATH?>/img/sidebar-1.jpg">
             <div class="logo">
                 <a href="<?=BASE_PATH?>" class="simple-text">
+                    <!-- logo here when sidebar is visible -->
                     Statera
                 </a>
             </div>
@@ -43,10 +45,10 @@
                             <p>Dashboard</p>
                         </a>
                     </li>
-                    <li class="<?=$this->_action == 'settings' ? 'active' : ''?>">
-                        <a href="<?=BASE_PATH?>/settings">
+                    <li class="<?=$this->_action == 'investments' ? 'active' : ''?>">
+                        <a href="<?=BASE_PATH?>/investments">
                             <i class="material-icons">bubble_chart</i>
-                            <p>Settings</p>
+                            <p>Investments</p>
                         </a>
                     </li>
                     <li class="<?=$this->_action == 'notifications' ? 'active' : ''?>">
@@ -55,10 +57,10 @@
                             <p>Notifications</p>
                         </a>
                     </li>
-                    <li class="<?=$this->_action == 'profile' ? 'active' : ''?>">
-                        <a href="<?=BASE_PATH?>/profile">
+                    <li class="<?=$this->_action == 'account' ? 'active' : ''?>">
+                        <a href="<?=BASE_PATH?>/account">
                             <i class="material-icons">person</i>
-                            <p>Profile</p>
+                            <p>Account</p>
                         </a>
                     </li>
 <!--                    <li>-->
@@ -123,8 +125,9 @@
                         </button><!-- end hamburger -->
 
                         <!-- current page -->
-                        <a class="navbar-brand" href="#">
-                            <?=ucwords($this->_action)?>
+                        <a class="navbar-brand" href="<?=BASE_PATH?>">
+                            <!-- logo here when sidebar is NOT visible -->
+                            Statera
                         </a>
 
                     </div>

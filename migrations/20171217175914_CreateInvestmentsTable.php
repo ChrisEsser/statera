@@ -2,7 +2,7 @@
 
 use Phpmig\Migration\Migration;
 
-class CreatUserTable extends Migration
+class CreateInvestmentsTable extends Migration
 {
     /**
      * Do the migration
@@ -10,13 +10,15 @@ class CreatUserTable extends Migration
     public function up()
     {
 
-        $sql = 'CREATE TABLE users (
+        $sql = 'CREATE TABLE investments (
                   id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
-                  username VARCHAR(255) UNIQUE NOT NULL, 
-                  first_name VARCHAR(255), 
-                  last_name VARCHAR(255), 
-                  password VARCHAR(64), 
-                  admin BIT NOT NULL DEFAULT 0
+                  shortname VARCHAR(20),
+                  longname VARCHAR(255),
+                  usd_value DECIMAL(13,4),
+                  last_sync DATETIME,
+                  sync_interval INT(11) UNSIGNED,
+                  value_endpoint VARCHAR(2083),
+                  membership_level INT(11)
                 );';
 
         $container = $this->getContainer();
@@ -30,7 +32,7 @@ class CreatUserTable extends Migration
     public function down()
     {
 
-        $sql = 'DROP TABLE `users`';
+        $sql = 'DROP TABLE investments';
         $container = $this->getContainer();
         $container['db']->query($sql);
 

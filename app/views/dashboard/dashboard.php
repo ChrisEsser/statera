@@ -1,77 +1,82 @@
 <!-- top section - quick summaries -->
 <div class="row">
+
+    <!-- total portfolio -->
     <div class="col-lg-3 col-md-6 col-sm-6">
         <div class="card card-stats">
             <div class="card-header" data-background-color="green">
                 <i class="fa fa-usd"></i>
             </div>
             <div class="card-content">
-                <p class="category">Revenue</p>
-                <h3 class="title">$34,245<br />
-                    <small>+2.5%</small>
-                </h3>
+                <p class="category">Total</p>
+                <h3 class="title">$34,245</h3>
+                <small class="text-success">+6.3%</small>
             </div>
             <div class="card-footer">
                 <div class="stats">
-                    <i class="material-icons text-danger">warning</i>
-                    <a href="#pablo">Break it down</a>
+                    <i class="material-icons">assignment</i> Break it down
                 </div>
             </div>
         </div>
-    </div>
+    </div><!-- end total -->
 
-    <div class="col-lg-3 col-md-6 col-sm-6">
-        <div class="card card-stats">
-            <div class="card-header" data-background-color="orange">
-                <i class="fa fa-usd"></i>
-            </div>
-            <div class="card-content">
-                <p class="category">Revenue</p>
-                <h3 class="title">$245.45&nbsp;</h3>
-                <small>+1.5%</small>
-            </div>
-            <div class="card-footer">
-                <div class="stats">
-                    <i class="material-icons">date_range</i> Last 24 Hours
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-3 col-md-6 col-sm-6">
-        <div class="card card-stats">
-            <div class="card-header" data-background-color="purple">
-                <i class="fa fa-btc"></i>
-            </div>
-            <div class="card-content">
-                <p class="category">From Crypto</p>
-                <h3 class="title">$200.45&nbsp;</h3>
-            </div>
-            <div class="card-footer">
-                <div class="stats">
-                    <i class="material-icons">local_offer</i> Break it down
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <!-- total stocks -->
     <div class="col-lg-3 col-md-6 col-sm-6">
         <div class="card card-stats">
             <div class="card-header" data-background-color="blue">
                 <i class="fa fa-area-chart"></i>
             </div>
             <div class="card-content">
-                <p class="category">From Stocks<br /></p>
-                <h3 class="title">$45.00&nbsp;</h3>
-                <small>+9.7%</small>
+                <p class="category">Stocks<br /></p>
+                <h3 class="title">$45.00&nbsp;&nbsp;</h3>
+                <small class="text-success">+9.7%</small>
             </div>
             <div class="card-footer">
                 <div class="stats">
-                    <i class="material-icons">update</i> Break it down
+                    <i class="material-icons">assignment</i> Break it down
                 </div>
             </div>
         </div>
-    </div>
+    </div><!-- end total stocks -->
+
+    <!-- total lending -->
+    <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card card-stats">
+            <div class="card-header" data-background-color="orange">
+                <i class="fa fa-university"></i>
+            </div>
+            <div class="card-content">
+                <p class="category">Lending</p>
+                <h3 class="title">$245.45</h3>
+                <small class="text-danger">-0.02%</small>
+            </div>
+            <div class="card-footer">
+                <div class="stats">
+                    <i class="material-icons">assignment</i> Break it down
+                </div>
+            </div>
+        </div>
+    </div><!-- end total lending -->
+
+    <!-- total cryptocurrency -->
+    <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card card-stats">
+            <div class="card-header" data-background-color="purple">
+                <i class="fa fa-btc"></i>
+            </div>
+            <div class="card-content">
+                <p class="category">Cryptocurrency</p>
+                <h3 class="title">$200.45</h3>
+                <small  class="text-success">+15.5%</small>
+            </div>
+            <div class="card-footer">
+                <div class="stats">
+                    <i class="material-icons">assignment</i> Break it down
+                </div>
+            </div>
+        </div>
+    </div><!-- end total cryptocurrency -->
+
 </div><!-- end quick summaries -->
 
 <!-- charts row -->

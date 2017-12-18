@@ -1,8 +1,8 @@
-function alert(message, type) {
+function notify(message, type) {
 
     $.notify({
-        message: message,
-        icon: ''
+        icon: 'alert',
+        message: message
     },{
         type: type,
         placement: {

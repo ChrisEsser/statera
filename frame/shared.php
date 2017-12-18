@@ -235,7 +235,11 @@ function addFieldErrors($fields)
 
 function getFieldErrors()
 {
-    return empty($_SESSION['frame']['invalid_fields']) ? [] : $_SESSION['frame']['invalid_fields'];
+
+    $errors = empty($_SESSION['frame']['invalid_fields']) ? [] : $_SESSION['frame']['invalid_fields'];
+    unset($_SESSION['frame']['invalid_fields']);
+    return $errors;
+
 }
 
 

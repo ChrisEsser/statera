@@ -7,6 +7,17 @@
     border-radius: 0 !important;
 }
 
+.login-container {
+    max-width: 400px;
+    margin: 20% auto auto;
+}
+
+@media (max-width: 992px) {
+    .login-container {
+        margin: auto;
+    }
+}
+
 @media (min-width: 992px) {
     .typo-line {
         padding-left: 140px;
@@ -16,7 +27,7 @@
     .typo-line .category {
         transform: translateY(-50%);
         top: 50%;
-        left: 0px;
+        left: 0;
         position: absolute;
     }
     .sidebar .nav>li.active-pro {

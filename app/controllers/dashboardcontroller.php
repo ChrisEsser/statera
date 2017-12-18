@@ -3,8 +3,17 @@
 class DashboardController extends BaseController
 {
 
+    protected $loggedInUser;
+
     public function beforeAction()
     {
+
+        // check for logged in user / access
+        if (empty($_SESSION['loggedInUser'])) {
+            Redirect::to(BASE_PATH . '/login');
+        }
+
+
 
     }
 
@@ -13,15 +22,18 @@ class DashboardController extends BaseController
 
     }
 
-    public function profile()
-    {
-
-    }
-
     public function account()
     {
 
     }
+
+    public function investments()
+    {
+
+        $investments = UserInvestment::find(['user_id' => $this->loggedInUser]);
+
+    }
+
 
     public function notifications()
     {
