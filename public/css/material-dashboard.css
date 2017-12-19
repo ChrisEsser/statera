@@ -2280,7 +2280,7 @@ fieldset[disabled] .navbar .navbar-nav>li>a.btn.btn-rose.active {
 
 .navbar .navbar-nav>li>a:not(.btn) .material-icons {
     margin-top: -3px;
-    top: 0px;
+    top: 0;
     position: relative;
     margin-right: 3px;
 }
@@ -4867,7 +4867,7 @@ fieldset[disabled] .navbar .btn-link:focus {
 
 @media (min-width: 991px) {
     .navbar-fixed {
-        width: calc(100% - 260px);
+        width: calc(100% - 200px);
     }
 }
 
@@ -6403,11 +6403,11 @@ footer .btn {
     .nav-open .menu-on-left .main-panel,
     .nav-open .menu-on-left .wrapper-full-page,
     .nav-open .menu-on-left .navbar-fixed>div {
-        -webkit-transform: translate3d(260px, 0, 0);
-        -moz-transform: translate3d(260px, 0, 0);
-        -o-transform: translate3d(260px, 0, 0);
-        -ms-transform: translate3d(260px, 0, 0);
-        transform: translate3d(260px, 0, 0);
+        -webkit-transform: translate3d(200px, 0, 0);
+        -moz-transform: translate3d(200px, 0, 0);
+        -o-transform: translate3d(200px, 0, 0);
+        -ms-transform: translate3d(200px, 0, 0);
+        transform: translate3d(200px, 0, 0);
     }
     .menu-on-left .main-panel {
         position: initial;
@@ -6416,14 +6416,14 @@ footer .btn {
     .menu-on-left .off-canvas-sidebar {
         left: 0;
         right: auto;
-        -webkit-transform: translate3d(-260px, 0, 0);
-        -moz-transform: translate3d(-260px, 0, 0);
-        -o-transform: translate3d(-260px, 0, 0);
-        -ms-transform: translate3d(-260px, 0, 0);
-        transform: translate3d(-260px, 0, 0);
+        -webkit-transform: translate3d(-200px, 0, 0);
+        -moz-transform: translate3d(-200px, 0, 0);
+        -o-transform: translate3d(-200px, 0, 0);
+        -ms-transform: translate3d(-200px, 0, 0);
+        transform: translate3d(-200px, 0, 0);
     }
     .menu-on-left #bodyClick {
-        left: 260px;
+        left: 200px;
         right: auto;
     }
     .main-panel {
@@ -6464,7 +6464,7 @@ footer .btn {
         display: block;
         top: 0;
         height: 100vh;
-        width: 260px;
+        width: 200px;
         right: 0;
         left: auto;
         z-index: 1032;
@@ -6475,11 +6475,11 @@ footer .btn {
         text-align: left;
         padding-right: 0px;
         padding-left: 0;
-        -webkit-transform: translate3d(260px, 0, 0);
-        -moz-transform: translate3d(260px, 0, 0);
-        -o-transform: translate3d(260px, 0, 0);
-        -ms-transform: translate3d(260px, 0, 0);
-        transform: translate3d(260px, 0, 0);
+        -webkit-transform: translate3d(200px, 0, 0);
+        -moz-transform: translate3d(200px, 0, 0);
+        -o-transform: translate3d(200px, 0, 0);
+        -ms-transform: translate3d(200px, 0, 0);
+        transform: translate3d(200px, 0, 0);
         -webkit-transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
         -moz-transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
         -o-transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
@@ -6548,11 +6548,11 @@ footer .btn {
     }
     .nav-open .main-panel {
         left: 0;
-        -webkit-transform: translate3d(-260px, 0, 0);
-        -moz-transform: translate3d(-260px, 0, 0);
-        -o-transform: translate3d(-260px, 0, 0);
-        -ms-transform: translate3d(-260px, 0, 0);
-        transform: translate3d(-260px, 0, 0);
+        -webkit-transform: translate3d(-200px, 0, 0);
+        -moz-transform: translate3d(-200px, 0, 0);
+        -o-transform: translate3d(-200px, 0, 0);
+        -ms-transform: translate3d(-200px, 0, 0);
+        transform: translate3d(-200px, 0, 0);
     }
     .nav-open .sidebar {
         box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
@@ -6687,7 +6687,7 @@ footer .btn {
         opacity: 0;
         top: 0;
         left: auto;
-        right: 260px;
+        right: 200px;
         content: "";
         z-index: 9999;
         overflow-x: hidden;

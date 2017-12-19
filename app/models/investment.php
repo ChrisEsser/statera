@@ -7,27 +7,33 @@ class Investment extends BaseModel
     protected static $_primaryKey = 'id';
 
     protected static $_tableFields = [
-        'shortname',
-        'longname',
-        'usd_value',
-        'last_sync',
-        'sync_interval',
-        'value_endpoint',
-        'membership_level'
+        'investment_type_id',
+        'short_name',
+        'long_name',
+        'day_value',
+        'month_value',
+        'year_value',
+        'year3_value',
+        'year5_value',
+        'last_value',
+        'last_update'
     ];
 
     protected static function defineRelations()
     {
-        self::addRelationOneToMany('id', 'UserInvestment', 'investment_id');
+        self::addRelationOneToOne('investment_type_id', 'InvestmentType', 'id');
     }
 
     public $id;
-    public $shortname;
-    public $longname;
-    public $usd_value;
-    public $last_sync;
-    public $sync_interval;
-    public $value_endpoint;
-    public $membership_level;
+    public $invetment_type_id;
+    public $short_name;
+    public $long_name;
+    public $day_value;
+    public $month_value;
+    public $year_value;
+    public $year3_value;
+    public $year5_value;
+    public $last_value;
+    public $last_update;
 
 }

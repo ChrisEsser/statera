@@ -9,12 +9,33 @@
 
 .login-container {
     max-width: 400px;
-    margin: 20% auto auto;
+    margin: 100px auto;
 }
 
-@media (max-width: 992px) {
+.main-panel {
+    height: 100%;
+}
+
+.navbar-brand {
+    display: none;
+}
+
+@media (max-width: 991px) {
     .login-container {
-        margin: auto;
+        margin: 15px auto;
+    }
+    .navbar-brand {
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    .content .container-fluid {
+        padding: 0;
+    }
+    .content .container-fluid > .row > div {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
